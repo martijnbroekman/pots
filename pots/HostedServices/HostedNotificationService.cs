@@ -21,7 +21,7 @@ namespace pots.HostedServices
 
         public async void DoWork()
         {
-            await _hubContext.Clients.All.SendAsync("hallo plebs");
+            await _hubContext.Clients.All.SendAsync("plebs", "hallo plebs");
         }
     }
 }

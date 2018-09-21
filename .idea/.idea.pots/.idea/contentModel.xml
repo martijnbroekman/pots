@@ -8,6 +8,7 @@
       <e p="pots" t="IncludeRecursive">
         <e p="Controllers" t="Include">
           <e p="ActivitiesController.cs" t="Include" />
+          <e p="AuthorizationController.cs" t="Include" />
           <e p="EmotionsController.cs" t="Include" />
           <e p="NotificationsController.cs" t="Include" />
           <e p="UsersController.cs" t="Include" />
@@ -29,6 +30,10 @@
           <e p="20180919073900_AppInit.cs" t="Include" />
           <e p="20180919085514_AddedUserName.Designer.cs" t="Include" />
           <e p="20180919085514_AddedUserName.cs" t="Include" />
+          <e p="20180921140119_AddedIdentity.Designer.cs" t="Include" />
+          <e p="20180921140119_AddedIdentity.cs" t="Include" />
+          <e p="20180921151509_AddedIdentityTables.Designer.cs" t="Include" />
+          <e p="20180921151509_AddedIdentityTables.cs" t="Include" />
           <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">

@@ -5,6 +5,8 @@ namespace pots.Resources
     public class CreateUserResource
     {
         public string Name { get; set; }
+        public string Mail { get; set; }
+        public string Password { get; set; }
     }
     
     public class UserResource : CreateUserResource
@@ -18,6 +20,7 @@ namespace pots.Resources
             {
                 Id = user.Id,
                 Name = user.Name,
+                Mail = user.Email,
                 CanReceiveNotification = user.CanReceiveNotification
             };
         }
