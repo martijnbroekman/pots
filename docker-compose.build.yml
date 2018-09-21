@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+  webapplication:
+    image: pots/api
+    ports:
+      - 80:80
+      - 443:443
+    build: ./pots

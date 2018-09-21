@@ -1,0 +1,32 @@
+version: "3.5"
+
+services:
+  database:
+    image: mariadb:10.3.5
+    ports:
+      - 3306:3306
+    volumes:
+      - database:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: pots
+      MYSQL_USER: pots
+      MYSQL_PASSWORD: password
+    networks: 
+      - pots
+
+  backend:
+    image: pots/api
+    networks:
+      - pots
+    ports:
+      - "80:80"
+      - "443:433"
+
+networks:
+  pots:
+    name: pots
+
+volumes:
+  database:
+    driver: local
