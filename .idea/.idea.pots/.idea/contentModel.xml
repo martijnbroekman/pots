@@ -35,6 +35,8 @@
           <e p="20180921140119_AddedIdentity.cs" t="Include" />
           <e p="20180921151509_AddedIdentityTables.Designer.cs" t="Include" />
           <e p="20180921151509_AddedIdentityTables.cs" t="Include" />
+          <e p="20180924125943_NotificationTypeForUser.Designer.cs" t="Include" />
+          <e p="20180924125943_NotificationTypeForUser.cs" t="Include" />
           <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
