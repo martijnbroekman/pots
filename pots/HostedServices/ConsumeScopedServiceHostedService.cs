@@ -25,7 +25,7 @@ namespace pots.HostedServices
             return Task.CompletedTask;
         }
 
-        private void DoWork(object state)
+        private async void DoWork(object state)
         {
             using (var scope = _services.CreateScope())
             {
@@ -33,7 +33,7 @@ namespace pots.HostedServices
                     scope.ServiceProvider
                         .GetRequiredService<HostedNotificationService>();
 
-                scopedProcessingService.DoWork();
+                await scopedProcessingService.DoWork();
             }
         }
 

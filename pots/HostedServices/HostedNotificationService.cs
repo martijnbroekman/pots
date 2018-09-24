@@ -1,10 +1,14 @@
 using System;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using pots.Data;
 using pots.Hubs;
+using pots.Models;
+using pots.Resources;
 
 namespace pots.HostedServices
 {
@@ -19,9 +23,21 @@ namespace pots.HostedServices
             _hubContext = hubContext;
         }
 
-        public async void DoWork()
+        public async Task DoWork()
         {
-            await _hubContext.Clients.All.SendAsync("plebs", "hallo plebs");
+            var users = await _context.Users.Where(u => u.CanReceiveNotification).ToListAsync();
+            foreach (var user in users)
+            {
+                
+                await _hubContext.Clients.User(user.Id.ToString()).SendAsync("notification", new ActivityResource
+                {
+                    Id = 1,
+                    Description = "test",
+                    AmountOfUsers = 2,
+                    CanBeLess = false,
+                    Type = "Competence"
+                });
+            }
         }
     }
 }
