@@ -20,7 +20,7 @@ namespace pots.HostedServices
         public Task StartAsync(CancellationToken cancellationToken)
         {
             _timer = new Timer(DoWork, null, TimeSpan.Zero,
-                TimeSpan.FromSeconds(20)); //.FromMinutes(2));
+                TimeSpan.FromSeconds(10));
 
             return Task.CompletedTask;
         }

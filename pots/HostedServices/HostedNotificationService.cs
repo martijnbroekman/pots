@@ -77,7 +77,6 @@ namespace pots.HostedServices
                     // Saving the users in the notifications
                     await _context.SaveChangesAsync();
                     
-                    notifications.Add(currentNotification);
                     if (!activities.Any())
                     {
                         currentNotification = null;
@@ -90,6 +89,7 @@ namespace pots.HostedServices
 
                     _context.Add(currentNotification);
                     await _context.SaveChangesAsync();
+                    notifications.Add(currentNotification);
                 }
 
                 var userInNotification = new UserInNotification
