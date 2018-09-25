@@ -18,6 +18,9 @@
           <e p="ApplicationDbContext.cs" t="Include" />
         </e>
         <e p="Dockerfile" t="Include" />
+        <e p="Helpers" t="Include">
+          <e p="ShuffleHelper.cs" t="Include" />
+        </e>
         <e p="HostedServices" t="Include">
           <e p="ConsumeScopedServiceHostedService.cs" t="Include" />
           <e p="HostedNotificationService.cs" t="Include" />

@@ -31,6 +31,7 @@ namespace pots.Controllers
             return Ok(users.Select(UserResource.GetUserResource));
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody]CreateUserResource user)
         {

@@ -19,8 +19,8 @@ namespace pots.HostedServices
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            _timer = new Timer(DoWork, null, TimeSpan.Zero, 
-                TimeSpan.FromSeconds(30));//.FromMinutes(5));
+            _timer = new Timer(DoWork, null, TimeSpan.Zero,
+                TimeSpan.FromSeconds(20)); //.FromMinutes(2));
 
             return Task.CompletedTask;
         }
