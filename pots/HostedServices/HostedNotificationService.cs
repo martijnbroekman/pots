@@ -51,7 +51,7 @@ namespace pots.HostedServices
         private async Task SendNotifications(List<User> users, List<Activity> activities)
         {
             
-            if (!activities.Any() || !users.Any())
+            if (!activities.Any() || users.Count <= 1)
                 return;
             
             var rnd = new Random();
@@ -118,13 +118,19 @@ namespace pots.HostedServices
 
             foreach (var notification in notifications)
             {
+                var multiplePeople = notification.Users.Count > 2;
                 foreach (var user in notification.Users)
                 {
                     var otherUsers = notification.Users.Where(u => u != user).Select(u => u.User.Name);
                     await _hubContext.Clients.User(user.UserId.ToString()).SendAsync("notification", new
                     {
                         Id = notification.Id,
-                        Description = string.Format(notification.Activity.Description, string.Join(',', otherUsers)),
+                        Title = notification.Activity.Type.Equals(NotificationType.Competence) ? 
+                            "Een nieuwe uitdaging" : 
+                            "Een leuke activiteit",
+                        Description = notification.Activity.Type.Equals(NotificationType.Competence) ?
+                            $"Hey {user.User.Name}! {string.Join(", ", otherUsers)} {(multiplePeople ? "dagen" : "daagt")} je uit voor een {notification.Activity.Description} wedstrijd! Heb je zin om de uitdaging aan te gaan?" : 
+                            $"Hoi {user.User.Name}, ontspannen is goed voor je productiviteit. Lijkt het je leuk om samen met ${string.Join(", ", otherUsers)} {notification.Activity.Description}",
                         AmountOfUsers = notification.Activity.AmountOfUsers,
                         CanBeLess = notification.Activity.CanBeLess
                     });

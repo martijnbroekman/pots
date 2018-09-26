@@ -40,6 +40,8 @@
           <e p="20180921151509_AddedIdentityTables.cs" t="Include" />
           <e p="20180924125943_NotificationTypeForUser.Designer.cs" t="Include" />
           <e p="20180924125943_NotificationTypeForUser.cs" t="Include" />
+          <e p="20180925133534_AddedResponseTime.Designer.cs" t="Include" />
+          <e p="20180925133534_AddedResponseTime.cs" t="Include" />
           <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -56,6 +58,7 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Resources" t="Include">
+          <e p="AcceptNotificationResource.cs" t="Include" />
           <e p="ActivityResource.cs" t="Include" />
           <e p="EmotionResource.cs" t="Include" />
           <e p="StepResource.cs" t="Include" />

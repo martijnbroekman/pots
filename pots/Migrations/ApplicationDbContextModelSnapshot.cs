@@ -268,6 +268,8 @@ namespace pots.Migrations
 
                     b.Property<int>("NotificationId");
 
+                    b.Property<DateTime>("ResponseTime");
+
                     b.Property<int>("UserId");
 
                     b.HasKey("Id");

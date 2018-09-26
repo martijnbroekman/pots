@@ -1,3 +1,5 @@
+using System;
+
 namespace pots.Models
 {
     public class UserInNotification
@@ -8,5 +10,6 @@ namespace pots.Models
         public Notification Notification { get; set; }
         public int NotificationId { get; set; }
         public bool Accepted { get; set; }
+        public DateTime ResponseTime { get; set; }
     }
 }
