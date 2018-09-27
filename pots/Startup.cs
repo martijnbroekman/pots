@@ -17,6 +17,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Logging;
 using Microsoft.IdentityModel.Tokens;
 using OpenIddict.Abstractions;
 using pots.Data;
@@ -38,6 +39,8 @@ namespace pots
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            IdentityModelEventSource.ShowPII = true;
+            
             services.AddDbContext<ApplicationDbContext>(options =>
             {
                 options.UseMySql(Configuration.GetConnectionString("DefaultConnection"));
@@ -137,6 +140,8 @@ namespace pots
             }
             else
             {
+                app.UseDeveloperExceptionPage();
+                
                 app.UseHsts();
                 using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
                 {

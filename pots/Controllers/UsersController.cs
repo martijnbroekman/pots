@@ -48,7 +48,8 @@ namespace pots.Controllers
                 Email = user.Mail,
                 NormalizedEmail = user.Mail.ToUpper(),
                 UserName = user.Mail,
-                NormalizedUserName = user.Mail.ToUpper()
+                NormalizedUserName = user.Mail.ToUpper(),
+                Type = user.Type
             };
             await _userManager.CreateAsync(newUser, user.Password);
             await _context.SaveChangesAsync();

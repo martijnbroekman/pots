@@ -2,14 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b55c8257-26a8-4a04-b04f-a38e9c5bdd0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pots/Resources/AcceptNotificationResource.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.pots/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pots/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.pots/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pots/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pots/Controllers/NotificationsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pots/Controllers/NotificationsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pots/HostedServices/ConsumeScopedServiceHostedService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pots/HostedServices/ConsumeScopedServiceHostedService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pots/HostedServices/HostedNotificationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pots/HostedServices/HostedNotificationService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pots/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pots/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pots/Models/UserInNotification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pots/Models/UserInNotification.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pots/Controllers/UsersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Migrations/20180919073900_AppInit.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Migrations/20180919073900_AppInit.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Migrations/20180919085514_AddedUserName.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Migrations/20180919085514_AddedUserName.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Migrations/20180921140119_AddedIdentity.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Migrations/20180921140119_AddedIdentity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Migrations/20180921151509_AddedIdentityTables.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Migrations/20180921151509_AddedIdentityTables.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Migrations/20180924125943_NotificationTypeForUser.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Migrations/20180924125943_NotificationTypeForUser.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Migrations/20180925133534_AddedResponseTime.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Migrations/20180925133534_AddedResponseTime.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Resources/UserResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pots/Resources/UserResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pots/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pots/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/pots/appsettings.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,46 +33,47 @@
     <session id="849641970">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="5" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="5" />
-          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.15" value="3" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Dockerfile" value="1" />
-          <entry key="cs" value="81" />
-          <entry key="json" value="8" />
+          <entry key="cs" value="92" />
+          <entry key="json" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="81" />
+          <entry key="C#" value="92" />
           <entry key="Dockerfile" value="1" />
-          <entry key="JSON" value="8" />
+          <entry key="JSON" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="8" />
-          <entry key="cs" value="8877" />
+          <entry key="cs" value="9036" />
           <entry key="json" value="70" />
-          <entry key="txt" value="139" />
+          <entry key="txt" value="211" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="8877" />
+          <entry key="C#" value="9036" />
           <entry key="Dockerfile" value="8" />
           <entry key="JSON" value="70" />
-          <entry key="PLAIN_TEXT" value="139" />
+          <entry key="PLAIN_TEXT" value="211" />
         </counts>
       </usages-collector>
     </session>
@@ -71,150 +84,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pots/HostedServices/HostedNotificationService.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="124" column="104" lean-forward="true" selection-start-line="124" selection-start-column="104" selection-end-line="124" selection-end-column="104" />
-              <folding>
-                <marker date="1537956064063" expanded="false" signature="6:370" ph="..." />
-                <marker date="1537956064063" expanded="true" signature="401:6399" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="446:6397" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="688:778" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="814:929" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="988:1333" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="1395:1742" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="1833:5994" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="2499:3973" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="2756:3515" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="2954:3081" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="3597:3841" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="4234:4559" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="4616:5984" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="4754:5970" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="5002:5950" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="6068:6391" ph="{...}" />
-                <marker date="1537956064063" expanded="true" signature="6232:6380" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pots/Helpers/ShuffleHelper.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-              <folding>
-                <marker date="1537873702143" expanded="false" signature="6:66" ph="..." />
-                <marker date="1537873702143" expanded="true" signature="130:766" ph="{...}" />
-                <marker date="1537873702143" expanded="true" signature="224:760" ph="{...}" />
-                <marker date="1537873702143" expanded="true" signature="338:750" ph="{...}" />
-                <marker date="1537873702143" expanded="true" signature="369:586" ph="/* Swap element &quot;i&quot; with a random earlier element it (or itself) ... */" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pots/HostedServices/ConsumeScopedServiceHostedService.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-              <folding>
-                <marker date="1537955605807" expanded="false" signature="6:151" ph="..." />
-                <marker date="1537955605807" expanded="true" signature="182:1399" ph="{...}" />
-                <marker date="1537955605807" expanded="true" signature="267:1397" ph="{...}" />
-                <marker date="1537955605807" expanded="true" signature="442:496" ph="{...}" />
-                <marker date="1537955605807" expanded="true" signature="565:747" ph="{...}" />
-                <marker date="1537955605807" expanded="true" signature="796:1120" ph="{...}" />
-                <marker date="1537955605807" expanded="true" signature="862:1110" ph="{...}" />
-                <marker date="1537955605807" expanded="true" signature="1188:1309" ph="{...}" />
-                <marker date="1537955605807" expanded="true" signature="1340:1391" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pots/Controllers/NotificationsController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="75" column="90" selection-start-line="75" selection-start-column="90" selection-end-line="75" selection-end-column="90" />
-              <folding>
-                <marker date="1537952013995" expanded="false" signature="6:288" ph="..." />
-                <marker date="1537952013995" expanded="true" signature="316:4044" ph="{...}" />
-                <marker date="1537952013995" expanded="true" signature="420:4042" ph="{...}" />
-                <marker date="1537952013995" expanded="true" signature="660:750" ph="{...}" />
-                <marker date="1537952013995" expanded="true" signature="879:3357" ph="{...}" />
-                <marker date="1537952013995" expanded="true" signature="2016:2308" ph="{...}" />
-                <marker date="1537952013995" expanded="true" signature="2370:3302" ph="{...}" />
-                <marker date="1537952013995" expanded="true" signature="2441:3288" ph="{...}" />
-                <marker date="1537952013995" expanded="true" signature="2854:3268" ph="{...}" />
-                <marker date="1537952013995" expanded="true" signature="3444:4036" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pots/Hubs/CustomUserIdProvider.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="60" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="60" />
-              <folding>
-                <marker date="1537713673167" expanded="false" signature="6:65" ph="..." />
-                <marker date="1537713673167" expanded="true" signature="144:310" ph="{...}" />
-                <marker date="1537713673167" expanded="true" signature="223:304" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pots/Resources/AcceptNotificationResource.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="43" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="43" />
-              <folding>
-                <marker date="1537882102660" expanded="true" signature="24:125" ph="{...}" />
-                <marker date="1537882102660" expanded="true" signature="70:123" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pots/Resources/ActivityResource.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-              <folding>
-                <marker date="1537344021315" expanded="true" signature="80:1094" ph="{...}" />
-                <marker date="1537344021315" expanded="true" signature="381:708" ph="{...}" />
-                <marker date="1537344021315" expanded="true" signature="444:697" ph="{...}" />
-                <marker date="1537344021315" expanded="true" signature="756:1088" ph="{...}" />
-                <marker date="1537344021315" expanded="true" signature="811:1077" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pots/Resources/UserResource.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="345">
+              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding>
-                <marker date="1537541871387" expanded="true" signature="82:221" ph="{...}" />
-                <marker date="1537541871387" expanded="true" signature="277:698" ph="{...}" />
-                <marker date="1537541871387" expanded="true" signature="439:692" ph="{...}" />
-                <marker date="1537541871387" expanded="true" signature="498:681" ph="{...}" />
+                <marker date="1537960636512" expanded="true" signature="44:853" ph="{...}" />
+                <marker date="1537960636512" expanded="true" signature="80:225" ph="{...}" />
+                <marker date="1537960636512" expanded="true" signature="285:342" ph="{...}" />
+                <marker date="1537960636512" expanded="true" signature="396:851" ph="{...}" />
+                <marker date="1537960636512" expanded="true" signature="558:845" ph="{...}" />
+                <marker date="1537960636512" expanded="true" signature="617:834" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>identitymode</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -225,7 +116,6 @@
     <setting file="file://$PROJECT_DIR$/pots/Models/Emotion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pots/Models/Step.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pots/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/pots/Migrations/20180924125943_NotificationTypeForUser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5C069570-324E-4624-8FE9-69E9573B1627/69/e9181539/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pots/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pots/Helpers/ShuffleHelper.cs" root0="FORCE_HIGHLIGHTING" />
@@ -241,12 +131,11 @@
     <setting file="file://$PROJECT_DIR$/pots/Models/NotificationType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pots/Models/Activity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pots/Data/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/pots/Migrations/20180919073900_AppInit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pots/Migrations/20180926112440_AppInit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pots/Controllers/ActivitiesController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pots/Resources/ActivityResource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3356FB41-6D5C-43C3-AA2E-659063ECC017/1c/ffc47cb6/IdentityModelEventSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pots/Controllers/AuthorizationController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/pots/Migrations/20180921140119_AddedIdentity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/pots/Migrations/20180921151509_AddedIdentityTables.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FDFDE55E-2BFD-4153-BACD-07CCD41AE5E6/3f/e3b40200/ClaimTypes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pots/Hubs/CustomUserIdProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pots/Resources/AcceptNotificationResource.cs" root0="FORCE_HIGHLIGHTING" />
@@ -273,14 +162,10 @@
         <option value="$PROJECT_DIR$/pots/Properties/launchSettings.json" />
         <option value="$PROJECT_DIR$/pots/Controllers/EmotionsController.cs" />
         <option value="$PROJECT_DIR$/pots/Controllers/AuthorizationController.cs" />
-        <option value="$PROJECT_DIR$/pots/Resources/UserResource.cs" />
         <option value="$PROJECT_DIR$/pots/Data/ApplicationDbContext.cs" />
-        <option value="$PROJECT_DIR$/pots/appsettings.json" />
         <option value="$PROJECT_DIR$/pots/Hubs/CustomUserIdProvider.cs" />
-        <option value="$PROJECT_DIR$/pots/Startup.cs" />
         <option value="$PROJECT_DIR$/pots/Hubs/NotificationHub.cs" />
         <option value="$PROJECT_DIR$/pots/Models/User.cs" />
-        <option value="$PROJECT_DIR$/pots/Controllers/UsersController.cs" />
         <option value="$PROJECT_DIR$/pots/Helpers/Shuffle.cs" />
         <option value="$PROJECT_DIR$/pots/Helpers/ShuffleHelper.cs" />
         <option value="$PROJECT_DIR$/pots/Resources/AcceptNotificationResource.cs" />
@@ -288,6 +173,10 @@
         <option value="$PROJECT_DIR$/pots/Controllers/NotificationsController.cs" />
         <option value="$PROJECT_DIR$/pots/HostedServices/ConsumeScopedServiceHostedService.cs" />
         <option value="$PROJECT_DIR$/pots/HostedServices/HostedNotificationService.cs" />
+        <option value="$PROJECT_DIR$/pots/Resources/UserResource.cs" />
+        <option value="$PROJECT_DIR$/pots/Controllers/UsersController.cs" />
+        <option value="$PROJECT_DIR$/pots/Startup.cs" />
+        <option value="$PROJECT_DIR$/pots/appsettings.json" />
       </list>
     </option>
   </component>
@@ -354,6 +243,12 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="pots" type="24d0babc:SolutionExplorerModelNode" />
               <item name="pots" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Properties" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="pots" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="pots" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
@@ -373,6 +268,12 @@
               <item name="pots" type="24d0babc:SolutionExplorerModelNode" />
               <item name="pots" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Hubs" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="pots" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="pots" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Migrations" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -463,7 +364,9 @@
       <workItem from="1537791791238" duration="7524000" />
       <workItem from="1537857365447" duration="17169000" />
       <workItem from="1537876600925" duration="5366000" />
-      <workItem from="1537943099475" duration="12463000" />
+      <workItem from="1537943099475" duration="12773000" />
+      <workItem from="1537960245609" duration="4867000" />
+      <workItem from="1538042301898" duration="3027000" />
     </task>
     <task id="LOCAL-00001" summary="Added Hosted services">
       <created>1537520533873</created>
@@ -507,11 +410,25 @@
       <option name="project" value="LOCAL" />
       <updated>1537879817432</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Better notifications">
+      <created>1537956430315</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1537956430315</updated>
+    </task>
+    <task id="LOCAL-00008" summary="forgotten migration">
+      <created>1537961023633</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1537961023633</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114225000" />
+    <option name="totallyTimeSpent" value="122429000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -524,14 +441,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4957265" visible="true" weight="0.16595517" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4957265" visible="true" weight="0.16915688" />
       <window_info id="Structure" order="1" sideWeight="0.50427353" side_tool="true" weight="0.16275346" />
       <window_info id="Favorites" order="2" sideWeight="0.5019084" side_tool="true" weight="0.15795091" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.32912844" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.32912844" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39908257" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -593,7 +509,9 @@
     <MESSAGE value="Added notification logic" />
     <MESSAGE value="shit werktish" />
     <MESSAGE value="Het versturen van natificaties werkt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Het versturen van natificaties werkt" />
+    <MESSAGE value="Better notifications" />
+    <MESSAGE value="forgotten migration" />
+    <option name="LAST_COMMIT_MESSAGE" value="forgotten migration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -633,13 +551,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pots/Migrations/20180919073601_addedNotifications.cs" />
-    <entry file="file://$PROJECT_DIR$/pots/Migrations/20180919073900_AppInit.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="179" column="9" lean-forward="true" selection-start-line="179" selection-start-column="9" selection-end-line="179" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pots/Controllers/ValuesController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -661,20 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pots/appsettings.Development.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pots/Controllers/EmotionsController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pots/Models/Notification.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -685,11 +582,7 @@
     <entry file="file://$PROJECT_DIR$/pots/Program.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pots/Migrations/20180921140119_AddedIdentity.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pots/Migrations/20180921140119_AddedIdentity.cs" />
     <entry file="file://$PROJECT_DIR$/pots/Controllers/AuthorizationController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1635">
@@ -704,27 +597,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pots/Migrations/20180921151509_AddedIdentityTables.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pots/Properties/launchSettings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pots/Migrations/20180921151509_AddedIdentityTables.cs" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FDFDE55E-2BFD-4153-BACD-07CCD41AE5E6/3f/e3b40200/ClaimTypes.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pots/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="126" column="33" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -742,45 +619,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pots/appsettings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pots/Models/User.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="50" lean-forward="true" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pots/Models/NotificationType.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5C069570-324E-4624-8FE9-69E9573B1627/69/e9181539/List`1.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="96" column="8" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pots/Controllers/UsersController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pots/Controllers/ActivitiesController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
@@ -791,17 +633,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pots/HostedServices/HostedNotificationService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="123" column="103" selection-start-line="123" selection-start-column="103" selection-end-line="123" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pots/Helpers/ShuffleHelper.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-          <folding>
-            <marker date="1537873702143" expanded="false" signature="6:66" ph="..." />
-            <marker date="1537873702143" expanded="true" signature="130:766" ph="{...}" />
-            <marker date="1537873702143" expanded="true" signature="224:760" ph="{...}" />
-            <marker date="1537873702143" expanded="true" signature="338:750" ph="{...}" />
-            <marker date="1537873702143" expanded="true" signature="369:586" ph="/* Swap element &quot;i&quot; with a random earlier element it (or itself) ... */" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pots/HostedServices/ConsumeScopedServiceHostedService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -809,38 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="60" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="60" />
-          <folding>
-            <marker date="1537713673167" expanded="false" signature="6:65" ph="..." />
-            <marker date="1537713673167" expanded="true" signature="144:310" ph="{...}" />
-            <marker date="1537713673167" expanded="true" signature="223:304" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pots/Resources/ActivityResource.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding>
-            <marker date="1537344021315" expanded="true" signature="80:1094" ph="{...}" />
-            <marker date="1537344021315" expanded="true" signature="381:708" ph="{...}" />
-            <marker date="1537344021315" expanded="true" signature="444:697" ph="{...}" />
-            <marker date="1537344021315" expanded="true" signature="756:1088" ph="{...}" />
-            <marker date="1537344021315" expanded="true" signature="811:1077" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pots/Resources/UserResource.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="42" />
-          <folding>
-            <marker date="1537541871387" expanded="true" signature="82:221" ph="{...}" />
-            <marker date="1537541871387" expanded="true" signature="277:698" ph="{...}" />
-            <marker date="1537541871387" expanded="true" signature="439:692" ph="{...}" />
-            <marker date="1537541871387" expanded="true" signature="498:681" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -848,20 +665,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="43" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pots/Resources/ActivityResource.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pots/Migrations/20180925133534_AddedResponseTime.cs" />
+    <entry file="file://$PROJECT_DIR$/pots/Migrations/20180919073900_AppInit.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3356FB41-6D5C-43C3-AA2E-659063ECC017/1c/ffc47cb6/IdentityModelEventSource.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pots/Controllers/UsersController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
           <folding>
-            <marker date="1537882102660" expanded="true" signature="24:125" ph="{...}" />
-            <marker date="1537882102660" expanded="true" signature="70:123" ph="{...}" />
+            <marker date="1537960807192" expanded="false" signature="6:254" ph="..." />
+            <marker date="1537960807192" expanded="true" signature="394:2554" ph="{...}" />
+            <marker date="1537960807192" expanded="true" signature="614:706" ph="{...}" />
+            <marker date="1537960807192" expanded="true" signature="780:927" ph="{...}" />
+            <marker date="1537960807192" expanded="true" signature="1055:1913" ph="{...}" />
+            <marker date="1537960807192" expanded="true" signature="1458:1726" ph="{...}" />
+            <marker date="1537960807192" expanded="true" signature="2053:2548" ph="{...}" />
+            <marker date="1537960807192" expanded="true" signature="2308:2505" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pots/Controllers/NotificationsController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
+        <state relative-caret-position="975">
           <caret line="75" column="90" selection-start-line="75" selection-start-column="90" selection-end-line="75" selection-end-column="90" />
           <folding>
             <marker date="1537952013995" expanded="false" signature="6:288" ph="..." />
-            <marker date="1537952013995" expanded="true" signature="316:4044" ph="{...}" />
             <marker date="1537952013995" expanded="true" signature="420:4042" ph="{...}" />
             <marker date="1537952013995" expanded="true" signature="660:750" ph="{...}" />
             <marker date="1537952013995" expanded="true" signature="879:3357" ph="{...}" />
@@ -874,47 +719,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pots/HostedServices/ConsumeScopedServiceHostedService.cs">
+    <entry file="file://$PROJECT_DIR$/pots/Migrations/20180926112440_AppInit.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        <state>
           <folding>
-            <marker date="1537955605807" expanded="false" signature="6:151" ph="..." />
-            <marker date="1537955605807" expanded="true" signature="182:1399" ph="{...}" />
-            <marker date="1537955605807" expanded="true" signature="267:1397" ph="{...}" />
-            <marker date="1537955605807" expanded="true" signature="442:496" ph="{...}" />
-            <marker date="1537955605807" expanded="true" signature="565:747" ph="{...}" />
-            <marker date="1537955605807" expanded="true" signature="796:1120" ph="{...}" />
-            <marker date="1537955605807" expanded="true" signature="862:1110" ph="{...}" />
-            <marker date="1537955605807" expanded="true" signature="1188:1309" ph="{...}" />
-            <marker date="1537955605807" expanded="true" signature="1340:1391" ph="{...}" />
+            <marker date="1537961080228" expanded="false" signature="6:107" ph="..." />
+            <marker date="1537961080228" expanded="true" signature="134:16455" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="181:16453" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="257:15383" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="400:869" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="908:1010" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="1147:1589" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="1628:1731" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="1868:3380" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="3419:3522" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="3661:3994" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="4033:4463" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="4605:5004" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="5043:5472" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="5614:6013" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="6052:6481" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="6623:6934" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="6973:7436" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="7577:7725" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="7764:8533" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="8675:8965" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="9004:9470" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="9604:10416" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="10455:10868" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="10999:11389" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="11428:11835" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="11980:12455" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="12494:13273" ph="{...}" />
+            <marker date="1537961080228" expanded="true" signature="15456:16447" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pots/HostedServices/HostedNotificationService.cs">
+    <entry file="file://$PROJECT_DIR$/pots/appsettings.Development.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="124" column="104" lean-forward="true" selection-start-line="124" selection-start-column="104" selection-end-line="124" selection-end-column="104" />
+        <state relative-caret-position="165">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pots/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pots/Controllers/EmotionsController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
           <folding>
-            <marker date="1537956064063" expanded="false" signature="6:370" ph="..." />
-            <marker date="1537956064063" expanded="true" signature="401:6399" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="446:6397" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="688:778" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="814:929" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="988:1333" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="1395:1742" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="1833:5994" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="2499:3973" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="2756:3515" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="2954:3081" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="3597:3841" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="4234:4559" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="4616:5984" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="4754:5970" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="5002:5950" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="6068:6391" ph="{...}" />
-            <marker date="1537956064063" expanded="true" signature="6232:6380" ph="{...}" />
+            <marker date="1537443063772" expanded="false" signature="6:170" ph="..." />
+            <marker date="1537443063772" expanded="true" signature="297:1426" ph="{...}" />
+            <marker date="1537443063772" expanded="true" signature="432:484" ph="{...}" />
+            <marker date="1537443063772" expanded="true" signature="586:1024" ph="{...}" />
+            <marker date="1537443063772" expanded="true" signature="1125:1420" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pots/Properties/launchSettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pots/Controllers/ActivitiesController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+          <folding>
+            <marker date="1537345416971" expanded="false" signature="6:156" ph="..." />
+            <marker date="1537345416971" expanded="true" signature="184:1363" ph="{...}" />
+            <marker date="1537345416971" expanded="true" signature="285:1361" ph="{...}" />
+            <marker date="1537345416971" expanded="true" signature="422:474" ph="{...}" />
+            <marker date="1537345416971" expanded="true" signature="543:674" ph="{...}" />
+            <marker date="1537345416971" expanded="true" signature="752:1025" ph="{...}" />
+            <marker date="1537345416971" expanded="true" signature="1120:1355" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pots/Models/User.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+          <folding>
+            <marker date="1537793922896" expanded="false" signature="6:70" ph="..." />
+            <marker date="1537793922896" expanded="true" signature="93:397" ph="{...}" />
+            <marker date="1537793922896" expanded="true" signature="137:395" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pots/Models/NotificationType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <marker date="1537280203496" expanded="true" signature="21:129" ph="{...}" />
+            <marker date="1537280203496" expanded="true" signature="57:127" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pots/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+          <folding>
+            <marker date="1537963917510" expanded="false" signature="6:883" ph="..." />
+            <marker date="1537963917510" expanded="true" signature="899:6118" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="926:6116" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="985:1048" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="1271:5080" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="1414:1532" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="1880:2190" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="2278:2430" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="2469:3274" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="3486:3711" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="3753:4750" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="4083:4260" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="4339:4731" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="4395:4709" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="4512:4627" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="5268:6110" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="5315:5392" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="5409:5841" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="5636:5827" ph="{...}" />
+            <marker date="1537963917510" expanded="true" signature="5959:6059" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pots/Resources/UserResource.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <marker date="1537960636512" expanded="true" signature="44:853" ph="{...}" />
+            <marker date="1537960636512" expanded="true" signature="80:225" ph="{...}" />
+            <marker date="1537960636512" expanded="true" signature="285:342" ph="{...}" />
+            <marker date="1537960636512" expanded="true" signature="396:851" ph="{...}" />
+            <marker date="1537960636512" expanded="true" signature="558:845" ph="{...}" />
+            <marker date="1537960636512" expanded="true" signature="617:834" ph="{...}" />
           </folding>
         </state>
       </provider>

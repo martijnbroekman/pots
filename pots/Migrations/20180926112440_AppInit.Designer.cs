@@ -9,8 +9,8 @@ using pots.Data;
 namespace pots.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20180925133534_AddedResponseTime")]
-    partial class AddedResponseTime
+    [Migration("20180926112440_AppInit")]
+    partial class AppInit
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
