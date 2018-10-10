@@ -35,7 +35,7 @@ namespace pots.HostedServices
         private async Task SendCompetitiveNotifications()
         {
             var users = await _context.Users.Where(u => u.CanReceiveNotification && u.Type.Equals(NotificationType.Competence)).ToListAsync();
-            var activities = await _context.Activities.Where(a => a.Type.Equals(NotificationType.Competence)).ToListAsync();
+            var activities = await _context.Activities.Include(a => a.Gifs).Where(a => a.Type.Equals(NotificationType.Competence)).ToListAsync();
 
             await SendNotifications(users, activities);
         }
@@ -43,7 +43,7 @@ namespace pots.HostedServices
         private async Task SendSocialNotifications()
         {
             var users = await _context.Users.Where(u => u.CanReceiveNotification && u.Type.Equals(NotificationType.Relatedness)).ToListAsync();
-            var activities = await _context.Activities.Where(a => a.Type.Equals(NotificationType.Relatedness)).ToListAsync();
+            var activities = await _context.Activities.Include(a => a.Gifs).Where(a => a.Type.Equals(NotificationType.Relatedness)).ToListAsync();
 
             await SendNotifications(users, activities);
         }
@@ -130,9 +130,16 @@ namespace pots.HostedServices
                             "Een leuke activiteit",
                         Description = notification.Activity.Type.Equals(NotificationType.Competence) ?
                             $"Hey {user.User.Name}! {string.Join(", ", otherUsers)} {(multiplePeople ? "dagen" : "daagt")} je uit voor een {notification.Activity.Description} wedstrijd! Heb je zin om de uitdaging aan te gaan?" : 
-                            $"Hoi {user.User.Name}, ontspannen is goed voor je productiviteit. Lijkt het je leuk om samen met ${string.Join(", ", otherUsers)} {notification.Activity.Description}",
+                            $"Hoi {user.User.Name}, ontspannen is goed voor je productiviteit. Lijkt het je leuk om samen met {string.Join(", ", otherUsers)} {notification.Activity.Description}",
                         AmountOfUsers = notification.Activity.AmountOfUsers,
-                        CanBeLess = notification.Activity.CanBeLess
+                        CanBeLess = notification.Activity.CanBeLess,
+                        Gifs = notification.Activity.Gifs != null && notification.Activity.Gifs.Any() ? notification.Activity.Gifs.Select(g => new GifResource
+                            {
+                                GifUrl = g.GifUrl,
+                                Id = g.Id
+                        
+                            }
+                        ).ToList() : new List<GifResource>()
                     });
                 }
             }

@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.EntityFrameworkCore.Internal;
 using pots.Models;
 
 namespace pots.Resources
@@ -9,6 +12,7 @@ namespace pots.Resources
         public int AmountOfUsers { get; set; }
         public bool CanBeLess { get; set; }
         public string Type { get; set; }
+        public List<GifResource> Gifs { get; set; }
 
         public static ActivityResource GetActivityResource(Activity activity)
         {
@@ -18,7 +22,14 @@ namespace pots.Resources
                 Description = activity.Description,
                 AmountOfUsers = activity.AmountOfUsers,
                 CanBeLess = activity.CanBeLess,
-                Type = activity.Type.ToString()
+                Type = activity.Type.ToString(),
+                Gifs = activity.Gifs != null && activity.Gifs.Any() ? activity.Gifs.Select(g => new GifResource
+                    {
+                        GifUrl = g.GifUrl,
+                        Id = g.Id
+                        
+                    }
+                ).ToList() : new List<GifResource>()
             };
         }
 

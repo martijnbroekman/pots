@@ -1,8 +1,10 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using pots.Data;
+using pots.Models;
 using pots.Resources;
 
 namespace pots.Controllers
@@ -21,7 +23,7 @@ namespace pots.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok((await _context.Activities.ToListAsync()).Select(ActivityResource.GetActivityResource));
+            return Ok((await _context.Activities.Include(a => a.Gifs).ToListAsync()).Select(ActivityResource.GetActivityResource));
         }
 
         [HttpGet("id")]
@@ -42,6 +44,39 @@ namespace pots.Controllers
             await _context.SaveChangesAsync();
 
             return Ok(ActivityResource.GetActivityResource(activity));
+        }
+
+        [HttpPatch("{id}/gifs")]
+        public async Task<IActionResult> AddNotification(int id, [FromBody]CreateGifResource resource)
+        {
+            var gif = new Gif
+            {
+                GifUrl = resource.GifUrl,
+                ActivityId = id
+            };
+
+            _context.Add(gif);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Remove(int id)
+        {
+            var activity = await _context.Activities.Include(a => a.Gifs).FirstOrDefaultAsync(a => a.Id.Equals(id));
+            
+            if (activity == null)
+                return NotFound(nameof(activity));
+
+            _context.RemoveRange(activity.Gifs);
+            await _context.SaveChangesAsync();
+            
+            _context.Remove(activity);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
         }
     }
 }

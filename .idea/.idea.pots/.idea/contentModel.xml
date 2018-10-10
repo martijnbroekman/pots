@@ -32,11 +32,14 @@
         <e p="Migrations" t="Include">
           <e p="20180926112440_AppInit.Designer.cs" t="Include" />
           <e p="20180926112440_AppInit.cs" t="Include" />
+          <e p="20181008075346_AddedGifs.Designer.cs" t="Include" />
+          <e p="20181008075346_AddedGifs.cs" t="Include" />
           <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="Activity.cs" t="Include" />
           <e p="Emotion.cs" t="Include" />
+          <e p="Gif.cs" t="Include" />
           <e p="Notification.cs" t="Include" />
           <e p="NotificationType.cs" t="Include" />
           <e p="Step.cs" t="Include" />
@@ -51,6 +54,7 @@
           <e p="AcceptNotificationResource.cs" t="Include" />
           <e p="ActivityResource.cs" t="Include" />
           <e p="EmotionResource.cs" t="Include" />
+          <e p="GifResource.cs" t="Include" />
           <e p="StepResource.cs" t="Include" />
           <e p="UserResource.cs" t="Include" />
         </e>

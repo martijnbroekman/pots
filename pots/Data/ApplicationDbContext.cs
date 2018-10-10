@@ -18,7 +18,7 @@ namespace pots.Data
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<UserInNotification> UserInNotifications { get; set; }
         public DbSet<Activity> Activities { get; set; }
-        
+        public DbSet<Gif> Gifs { get; set; }
         
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -33,6 +33,11 @@ namespace pots.Data
                 .HasOne(e => e.User)
                 .WithMany(u => u.Emotions)
                 .HasForeignKey(e => e.UserId);
+
+            builder.Entity<Gif>()
+                .HasOne(g => g.Activity)
+                .WithMany(a => a.Gifs)
+                .HasForeignKey(g => g.ActivityId);
         }
     }
 }

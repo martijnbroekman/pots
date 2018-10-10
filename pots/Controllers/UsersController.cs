@@ -31,6 +31,17 @@ namespace pots.Controllers
             return Ok(users.Select(UserResource.GetUserResource));
         }
 
+        
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id.Equals(id));
+            if (user == null)
+                return NotFound(nameof(user));
+            
+            return Ok(UserResource.GetUserResource(user));
+        }
+
         [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody]CreateUserResource user)
@@ -51,10 +62,15 @@ namespace pots.Controllers
                 NormalizedUserName = user.Mail.ToUpper(),
                 Type = user.Type
             };
-            await _userManager.CreateAsync(newUser, user.Password);
+            var result = await _userManager.CreateAsync(newUser, user.Password);
             await _context.SaveChangesAsync();
-            
-            return Ok(new { Id = newUser.Id });
+
+            if (result.Succeeded)
+            {
+                return Ok(new { Id = newUser.Id });
+            }
+
+            return BadRequest(result.Errors.Select(e => e.Code));
         }
 
         [HttpPatch("{id}")]
